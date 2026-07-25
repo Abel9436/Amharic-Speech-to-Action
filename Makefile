@@ -7,7 +7,7 @@ test:
 	$(PY) -m pytest -q
 
 lint:
-	ruff check src tests app
+	ruff check src tests app examples
 
 baseline:
 	$(PY) -m src.baseline --config $(CONFIG_BASELINE)

@@ -1,0 +1,2 @@
+model,split,n,wer_raw,wer_raw_ci_low,wer_raw_ci_high,wer_norm,wer_norm_ci_low,wer_norm_ci_high,cer_norm,cer_norm_ci_low,cer_norm_ci_high,audio_hours,rtf
+EXAMPLE (hand-written pairs),example,6,0.4231,0.25,0.7222,0.3077,0.125,0.6667,0.1609,0.0449,0.3333,0.004,0.0

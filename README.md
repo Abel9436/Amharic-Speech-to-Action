@@ -14,6 +14,18 @@ _No results yet: run `make baseline`._
 
 Error buckets: [`results/baseline_errors.md`](results/baseline_errors.md).
 
+## Example output (illustrative, not results)
+
+To show what the pipeline produces before the GPU runs are done, `examples/make_sample.py` runs the real scoring and error-analysis code on six **hand-written** Amharic reference/hypothesis pairs, one per error type. These are not model outputs, and the numbers say nothing about any model.
+
+```bash
+python -m examples.make_sample   # writes examples/output/
+```
+
+- [`examples/output/sample_summary.csv`](examples/output/sample_summary.csv): same columns as `results/baseline.csv`
+- [`examples/output/sample_per_utterance.csv`](examples/output/sample_per_utterance.csv): per-utterance `ref`, `hyp`, `wer`, `cer`
+- [`examples/output/sample_errors.md`](examples/output/sample_errors.md): error buckets with examples
+
 ## Quickstart
 
 ```bash
