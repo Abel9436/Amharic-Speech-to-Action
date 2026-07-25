@@ -1,0 +1,17 @@
+# Core ASR / training stack (tested target: Kaggle/Colab T4, Python 3.10+)
+torch>=2.1
+transformers==4.46.3
+# datasets 3.x still supports script-based datasets such as google/fleurs (dropped in 4.0)
+datasets==3.6.0
+accelerate==1.1.1
+peft==0.13.2
+evaluate==0.4.3
+librosa==0.10.2.post1
+soundfile==0.12.1
+# Metrics, config, plots
+jiwer==4.0.0
+pyyaml==6.0.2
+matplotlib==3.9.2
+# Dev
+pytest==8.3.3
+ruff==0.8.4

@@ -1,0 +1,23 @@
+# Zero-shot baseline on FLEURS Amharic.
+dataset:
+  name: google/fleurs
+  config: am_et
+  split: test
+  max_samples: null   # set an int for a quick smoke run
+seed: 42
+batch_size: 8
+output_dir: results
+models:
+  - id: openai/whisper-small
+    family: whisper
+  - id: openai/whisper-medium
+    family: whisper
+  - id: openai/whisper-large-v3
+    family: whisper
+  - id: facebook/mms-1b-all
+    family: mms
+    target_lang: amh
+generation:
+  # Plain greedy decoding for the baseline; decoding fixes are measured in Phase 3.
+  num_beams: 1
+  max_new_tokens: 225

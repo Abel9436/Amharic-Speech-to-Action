@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.pytest_cache/
+.ruff_cache/
+# audio is hosted on HF Datasets, not in git
+data/recorded/audio/
+*.wav
+*.flac
+*.mp3
+# training outputs
+checkpoints/
+runs/
+hf_cache/
+results/**/*.cache
